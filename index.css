@@ -1,59 +1,45 @@
-.container{
-    min-height: 250px;
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:20px;
-    align-items: center;
-    border-radius: 25px;
-    margin-top:4rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba();
-    box-shadow: 2px 2px 7px 2px #171817;
-    
+.container {
+  min-height: 250px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba();
+  box-shadow: 2px 2px 7px 2px #171817;
 }
 
-
-.container #passwordGenerator{
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: 19px;
-    border: px solid #d5d5d5;
-    color: rgb(255,255 );
-    text-shadow: 1px 3px 3px #1c6ea4;
-    
-
-
+.container #passwordGenerator {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 19px;
+  border: px solid #d5d5d5;
+  color: rgb(255, 255);
+  text-shadow: 1px 3px 3px #1c6ea4;
 }
-#input{
-    height:30px;
-    width: 75%;
-    border: 3px outset rgba(124,123,120,0.7);
-    border-radius: 10px;
-    font-weight:bold;
-    letter-spacing: 3.6;
-    font-size: 16px;
-    text-align: center;
-    text-shadow: 2px 3px 3px #d5d5d5;
-
+#input {
+  height: 30px;
+  width: 75%;
+  border: 3px outset rgba(124, 123, 120, 0.7);
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 3.6;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 2px 3px 3px #d5d5d5;
 }
-button{
-    /* height:30px;
+button {
+  /* height:30px;
     width: 90px; */
-    margin: 15px 30px;
-    border: 2px outset #d5d5d5;
-    padding: 8px 28px;
-    font-size: 15px;
-    font-weight:600;
-}
-button:hover{
-    scale: 2px;
-}
-
-#range-box{
-    width: 90%;
-    margin: 50px;
+  margin: 15px 30px;
+  border: 2px outset #d5d5d5;
+  padding: 8px 28px;
+  font-size: 15px;
+  font-weight: 600;
 }
