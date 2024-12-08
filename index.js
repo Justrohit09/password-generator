@@ -13,8 +13,8 @@ rangeSlider.addEventListener("input", (slide) => {
 let char =
   "123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXY";
 var password = "";
-let length = 6;
 let generatePassword = () => {
+  password = "";
   for (let i = 0; i < currentValue; i++) {
     password += char.charAt(Math.floor(Math.random() * char.length));
   }
@@ -24,15 +24,15 @@ let generatePassword = () => {
 let generateBtn = document.getElementById("btn1");
 generateBtn.addEventListener("click", () => {
   inputEL.value = generatePassword();
+  inputEL.select(); // Select the input field to clear its value
 });
 
 // copy function
 const copyPassword = () => {
   var copyText = document.getElementById("input");
   copyText.select();
-  copyText.setSelectionRange(0, length);
+  copyText.setSelectionRange(0, copyText.value.length); // Set selection range to the entire value
   document.execCommand("copy");
 };
 
-btn2.addEventListener("click", copyPassword);
-
+copyBtn.addEventListener("click", copyPassword);
